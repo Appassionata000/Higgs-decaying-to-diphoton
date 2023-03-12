@@ -112,66 +112,59 @@ def Analyse(t, weighting):
     etconecut06 = Cuts(etconerel_max=0.06).tot_cuts()
     etconecut07 = Cuts(etconerel_max=0.07).tot_cuts()
 
-    cut_final_2 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.065, ptconerel_max=0.065,
-                       e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-    cut_final_3 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.065, ptconerel_max=0.065,
-                       e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-    cut_final_5 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.055,
-                       ptconerel_max=0.055, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-    cut_final_7 = Cuts(photon_pt_min=[35e3, 25e3], photon_num=2, lepton_num=0, etconerel_max=0.055,
-                       ptconerel_max=0.055, e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-#      Comb1
     cut_final_1 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.03, ptconerel_max=0.033,
                        e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-#     Comb 2
-    cut_final_4 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.055, ptconerel_max=0.055,
+    
+    cut_final_2 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.055, ptconerel_max=0.055,
                        e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-#     Comb 3
-    cut_final_10 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.055, ptconerel_max=0.055,
+    
+    cut_final_3 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.055, ptconerel_max=0.055,
                         e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-#     Comb 4
-    cut_final_6 = Cuts(photon_pt_min=[35e3, 25e3], photon_num=2, etconerel_max=0.055, ptconerel_max=0.055,
+    
+    cut_final_4 = Cuts(photon_pt_min=[35e3, 25e3], photon_num=2, etconerel_max=0.055, ptconerel_max=0.055,
                        e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-#     Comb 5
-    cut_final_8 = Cuts(photon_pt_min=[35e3, 25e3], etconerel_max=0.055, ptconerel_max=0.055,
+    
+    cut_final_5 = Cuts(photon_pt_min=[35e3, 25e3], etconerel_max=0.055, ptconerel_max=0.055,
                        e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-#     Comb 6
-    cut_final_9 = Cuts(photon_pt_min=[35e3, 25e3], etconerel_max=0.055,
+    
+    cut_final_6 = Cuts(photon_pt_min=[35e3, 25e3], etconerel_max=0.055,
                        ptconerel_max=0.055, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
-
-    cut_final_11 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.05,
+    
+    cut_final_7 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.05,
                         ptconerel_max=0.065, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
+    cut_final_8 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.065, ptconerel_max=0.065,
+                       e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
+    cut_final_9 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.065, ptconerel_max=0.065,
+                       e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
+    cut_final_10 = Cuts(photon_pt_min=[40e3, 30e3], photon_num=2, etconerel_max=0.055,
+                       ptconerel_max=0.055, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
+    cut_final_11 = Cuts(photon_pt_min=[35e3, 25e3], photon_num=2, lepton_num=0, etconerel_max=0.055,
+                       ptconerel_max=0.055, e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
 
     isolation_comb_1 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.05, ptconerel_max=0.05,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
     isolation_comb_2 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.055, ptconerel_max=0.055,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
     isolation_comb_3 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.06, ptconerel_max=0.06,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
     isolation_comb_4 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.065, ptconerel_max=0.065,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
     isolation_comb_5 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.07, ptconerel_max=0.07,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
     isolation_comb_6 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.05, ptconerel_max=0.065,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
+    
     isolation_comb_7 = Cuts(photon_pt_min=[40e3, 30e3], etconerel_max=0.08, ptconerel_max=0.08,
                             e_by_invMass=True, photon_eta_exclude=True, photon_isTight=True).tot_cuts()
 
     histogram(t=t, weighting=weighting, variable="invMass",  hist_id="invMass",
               n_bins=80, xmin=0, xmax=160e3, cuts="1")
-
-
-#     histogram(t=t, weighting = weighting,
-#           variable = "ptconerel0",  hist_id = "ptconerel0",
-#           n_bins=100, xmin=0.01, xmax=0.05, cuts="1")
-
-
-#     histogram_2D(t=t, weighting=weighting,
-#                   x_variable="photon_px0", y_variable="photon_py0", hist_id="photon_pt_2d",
-#                   n_x_bins=100, xmin=-100e3, xmax=100e3,
-#                   n_y_bins=100, ymin=-100e3, ymax=100e3,
-#                   cuts="1")
-
-
-#    histogram(t=t, weighting = weighting, variable = "ptconerel1", hist_id = "ptconerel1",
-#             n_bins=80, xmin=0, xmax=1, cuts="1")
