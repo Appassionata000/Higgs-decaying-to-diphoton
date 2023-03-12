@@ -1,7 +1,7 @@
 import ROOT as r
 from ShowHistogram import histogram
 from ShowHistogram import histogram_2D
-from cuts import Cuts
+from Cuts import Cuts
 
 
 def Analyse(t, weighting):
@@ -170,4 +170,3 @@ def Analyse(t, weighting):
               n_bins=80, xmin=0, xmax=160e3, cuts="1")
     
 
-    
