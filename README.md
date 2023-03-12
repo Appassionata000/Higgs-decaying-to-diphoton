@@ -10,3 +10,7 @@ Some plot results are shown in the next section.
 
 ### Variables of interest
 
+<img src="Figures/particle_num" width=60% height=30%>
+
+
+
