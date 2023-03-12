@@ -10,9 +10,7 @@ Some plot results are shown in the next section.
 
 ### Variables of interest
 
-<img src="Figures/particle_num.jpg" width=100%>
-
-<img src="Figures/etaphi.jpg" width=100%>
+<img src="Figures/numberetaphi.jpg" width=100%>
 
 <img src="Figures/cone.jpg" width=100%>
 
