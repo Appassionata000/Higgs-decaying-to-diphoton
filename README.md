@@ -6,8 +6,6 @@ The codes in this repository are the author's original work. Please note that th
 
 Special thanks to Peng Wang@UoM
 
-Some plot results are shown in the next section.
-
 ## Gallery
 
 ### Variables of interest
