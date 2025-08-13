@@ -1,5 +1,7 @@
 # Higgs decaying to diphoton
 
+(Undergraduate coursework)
+
 The original data are from [ATLAS Open Data 13 TeV](http://opendata.atlas.cern/release/2020/documentation/index.html). 
 
 
